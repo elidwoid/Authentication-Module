@@ -2,6 +2,7 @@ package com.example.authmodule.domain.use_case
 
 import com.example.authmodule.domain.model.RegisterInputValidationType
 import com.example.authmodule.util.containsNumbers
+import com.example.authmodule.util.containsSpecialChar
 import com.example.authmodule.util.containsUpperCase
 
 class ValidateRegisterInputUseCase {
@@ -27,6 +28,9 @@ class ValidateRegisterInputUseCase {
             return RegisterInputValidationType.PasswordNumberMissing
         }
         if (!password.containsUpperCase()){
+            return RegisterInputValidationType.PasswordUpperCaseMissing
+        }
+        if (!password.containsSpecialChar()){
             return RegisterInputValidationType.PasswordSpecialCharMissing
         }
         return RegisterInputValidationType.Valid

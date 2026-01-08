@@ -1,7 +1,6 @@
 package com.example.authmodule.domain.use_case
 
 import com.example.authmodule.domain.model.LoginInputValidationType
-import com.example.authmodule.domain.use_case.ValidateLoginInputUseCase
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
