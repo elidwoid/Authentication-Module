@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.dagger.hilt.plugin)
     alias(libs.plugins.kotlin.ksp)
 
-    kotlin("kapt")
+//    kotlin("kapt")
 
 }
 
@@ -76,10 +76,10 @@ dependencies {
     ksp(libs.dagger.hilt.compiler)
 
     // Dagger Hilt (KAPT - legacy / additional)
-    implementation("com.google.dagger:hilt-android:2.57.1")
-    kapt("com.google.dagger:hilt-compiler:2.57.1")
+   // implementation("com.google.dagger:hilt-android:2.57.1")
+   // kapt("com.google.dagger:hilt-compiler:2.57.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
-    kapt("androidx.hilt:hilt-compiler:1.0.0")
+   // kapt("androidx.hilt:hilt-compiler:1.0.0")
 
 
 
@@ -89,7 +89,7 @@ dependencies {
 
 }
 
-kapt {
-    correctErrorTypes = true
-}
+//kapt {
+//    correctErrorTypes = true
+//}
 

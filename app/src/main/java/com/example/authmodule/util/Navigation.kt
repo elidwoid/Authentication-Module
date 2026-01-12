@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.authmodule.presentation.FinalDestination
 import com.example.authmodule.presentation.LoginScreen
 import com.example.authmodule.presentation.RegisterScreen
 
@@ -45,6 +46,10 @@ fun Navigation(){
                     }
                 }
             )
+        }
+
+        composable(ScreenRoutes.FinalDestination.route){
+            FinalDestination()
         }
 
     }
